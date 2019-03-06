@@ -12,13 +12,19 @@
         android:roundIcon="@mipmap/app_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.OnGoingActivity"
+            android:theme="@style/AppTheme.Custom"></activity>
+        <activity android:name=".ui.MayOrdersActivity"
+            android:theme="@style/AppTheme.Custom"/>
+        <activity android:name=".ui.PindingOrderActivity"
+            android:theme="@style/AppTheme.Custom"/>
         <activity android:name=".ui.RegisterActivity" />
         <activity android:name=".ui.LoginActivity" />
-        <activity android:name=".ui.MainActivity"/>
+        <activity android:name=".ui.MainActivity" />
         <activity
             android:name=".ui.CreateRecipeActivity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".ui.ViewRecipeActivity"/>
+        <activity android:name=".ui.ViewRecipeActivity" />
         <activity
             android:name=".ui.SplashActivity"
             android:theme="@style/SplashTheme">
@@ -29,6 +35,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>

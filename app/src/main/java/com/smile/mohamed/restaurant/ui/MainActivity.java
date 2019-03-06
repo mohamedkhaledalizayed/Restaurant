@@ -55,7 +55,7 @@ public class MainActivity extends ToolbarActivity implements CategorizedFragment
 
         mToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("Recipes");
+        getSupportActionBar().setTitle("Menu Item");
 
         mViewPager = findViewById(R.id.viewpager);
         mTabLayout = findViewById(R.id.tablayout);

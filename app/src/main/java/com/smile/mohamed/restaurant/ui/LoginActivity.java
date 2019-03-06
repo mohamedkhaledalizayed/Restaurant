@@ -27,7 +27,7 @@ public class LoginActivity extends ToolbarActivity {
 
         mToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("Log in to your account");
+        getSupportActionBar().setTitle("Food Share");
 
         mLoginEmail = findViewById(R.id.login_email);
         mLoginPassword = findViewById(R.id.login_password);

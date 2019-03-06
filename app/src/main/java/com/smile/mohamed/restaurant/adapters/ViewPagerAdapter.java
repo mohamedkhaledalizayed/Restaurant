@@ -13,7 +13,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     private static final int TAB_COUNT = 2;
     private final Recipe recipe;
-    private String[] tabTitles = {"Ingredients", "Directions"};
+    private String[] tabTitles = {"Ingredients", "Add Ons"};
 
     public ViewPagerAdapter(FragmentManager fm, Recipe recipe) {
         super(fm);

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.PindingOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOP AVAILABILITY"
+            android:layout_alignParentStart="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            custom:textToggleLeft="OFF"
+            custom:textToggleRight="ON"
+            android:textSize="8sp"
+            android:layout_alignParentEnd="true"
+            custom:activeBgColor="@color/colorPrimary"
+            custom:inactiveBgColor="#FFF"
+            custom:toggleWidth="45dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending Orders"
+        android:layout_alignParentStart="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#ccc"
+        android:padding="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:onClick="orders"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/user_photo"
+            android:src="@drawable/support"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/user_photo"
+            android:layout_marginStart="5dp"
+            android:text="Mohamed Khaled"
+            android:textStyle="bold"
+            android:id="@+id/user_name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/user_photo"
+            android:layout_marginStart="5dp"
+            android:text="Today at 12:33 AM"
+            android:textSize="8sp"
+            android:layout_below="@+id/user_name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Total : $ 106:00"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/total"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order id:348"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/order_id"
+            android:layout_below="@+id/total"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:onClick="orders"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/user_photo1"
+            android:src="@drawable/support"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/user_photo1"
+            android:layout_marginStart="5dp"
+            android:text="Mohamed Khaled"
+            android:textStyle="bold"
+            android:id="@+id/user_name1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/user_photo1"
+            android:layout_marginStart="5dp"
+            android:text="Today at 12:33 AM"
+            android:textSize="8sp"
+            android:layout_below="@+id/user_name1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Total : $ 106:00"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/total1"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order id:348"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/order_id1"
+            android:layout_below="@+id/total1"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="My Store"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="myStore"
+        />
+
+</LinearLayout>

@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -268,14 +269,24 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void navigateToLogin() {
-        Intent startIntent = new Intent(this, LoginActivity.class);
-        startActivity(startIntent);
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent startIntent = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(startIntent);
+                finish();
+            }
+        },5000);
     }
 
     private void navigateToMainPage() {
-        Intent startIntent = new Intent(this, MainActivity.class);
-        startActivity(startIntent);
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent startIntent = new Intent(SplashActivity.this, PindingOrderActivity.class);
+                startActivity(startIntent);
+                finish();
+            }
+        },5000);
     }
 }

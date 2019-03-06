@@ -30,7 +30,7 @@ public class RecipeImageFragment extends NavigableFragment {
 
     private ImageView recipeImage;
     private Button selectImageBtn;
-    private EditText recipeName;
+    private EditText recipeName,recipePrice;
     private EditText recipeDescription;
 
     public static RecipeImageFragment newInstance(Recipe recipe) {
@@ -56,6 +56,7 @@ public class RecipeImageFragment extends NavigableFragment {
         selectImageBtn = view.findViewById(R.id.choose_image);
         recipeDescription = view.findViewById(R.id.recipe_description);
         recipeName = view.findViewById(R.id.recipe_name);
+        recipePrice = view.findViewById(R.id.recipe_price);
 
         Bundle args = getArguments();
         if (args != null) {
@@ -99,7 +100,7 @@ public class RecipeImageFragment extends NavigableFragment {
             return;
         }
 
-        String name = recipeName.getText().toString();
+        String name = recipeName.getText().toString()+"      $"+recipePrice.getText();
         String description = recipeDescription.getText().toString();
 
         if (name.isEmpty()) {

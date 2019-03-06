@@ -28,7 +28,14 @@
             android:layout_width="match_parent"
             android:inputType="text"
             android:layout_height="wrap_content"
-            android:hint="Your recipe name" />
+            android:hint="Your item name" />
+
+        <EditText
+            android:id="@+id/recipe_price"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:hint="Your item Price" />
 
         <EditText
             android:id="@+id/recipe_description"
